@@ -4,7 +4,8 @@
 #include <Arduino.h>
 #include <mavlink.h>
 
-void setupMavlink();
-void handleMavlinkCommunication();
+// Function prototypes
+void setupMavlink();                  // Initialize MAVLink communication
+void handleMavlinkCommunication();    // Handle incoming MAVLink messages
 
 #endif

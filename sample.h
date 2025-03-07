@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 
-void sample(int container, int depth);
+// Function prototype
+void sample(int container, int depth);  // Perform sampling for a specific container and depth
 
 #endif

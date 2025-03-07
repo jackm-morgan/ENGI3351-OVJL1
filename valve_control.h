@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 
+// Define pin numbers for valves and pump
 #define VALVE_1 6
 #define VALVE_2 10
 #define VALVE_3 8 
@@ -10,9 +11,10 @@
 #define VALVE_PURGE 7
 #define PUMP 9
 
-void setupValves();
-void config_valves(int container);
-void default_state();
-void purge();
+// Function prototypes
+void setupValves();          // Initialize valve and pump pins
+void config_valves(int container); // Configure valves for a specific container
+void default_state();        // Set all valves and pump to their default state
+void purge();                // Perform a purge operation
 
 #endif

@@ -3,10 +3,12 @@
 
 #include <Arduino.h>
 
+// Define pin numbers for stepper motor control
 #define SM_DIR_PIN 5
 #define SM_STEP_PIN 4
 
-void setupStepperMotor();
-void spool_down_mm(float depth);
+// Function prototypes
+void setupStepperMotor();          // Initialize stepper motor pins
+void spool_down_mm(float depth);   // Move the stepper motor by a specified depth
 
 #endif
