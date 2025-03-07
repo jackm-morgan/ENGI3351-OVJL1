@@ -10,10 +10,5 @@ void sample(int container, int depth) {
   purge();                  // Perform a purge operation
   pump_to_container(container);  // Pump water to the target container
   default_state();          // Set valves and pump to default state
-  spool_down_mm(-depth);    // Raise the sampling mechanism
-
-  // Print completion message
-  Serial.print("Sampling Complete in Container [");
-  Serial.print(container);
-  Serial.println("]");
+  spool_up_mm(depth);       // Raise the sampling mechanism
 }

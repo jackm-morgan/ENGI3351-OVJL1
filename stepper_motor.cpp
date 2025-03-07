@@ -6,7 +6,7 @@ void setupStepperMotor() {
   pinMode(SM_STEP_PIN, OUTPUT);
 }
 
-// Move the stepper motor by a specified depth (in millimeters)
+// Move the stepper down motor by a specified depth (in millimeters)
 void spool_down_mm(float depth) {
   float deg_depth_factor = 3.1218781219;  // Conversion factor from mm to degrees
   float deg = depth * deg_depth_factor;   // Convert depth to degrees
@@ -24,4 +24,9 @@ void spool_down_mm(float depth) {
     digitalWrite(SM_STEP_PIN, LOW); 
     delayMicroseconds(usDelay); 
   }
+}
+
+// Move stepper motor up by a specified depth (in millimeters)
+void spool_up_mm(float depth){
+  spool_down_mm(-depth);                // Spool down with negative depth
 }

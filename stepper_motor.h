@@ -9,6 +9,7 @@
 
 // Function prototypes
 void setupStepperMotor();          // Initialize stepper motor pins
-void spool_down_mm(float depth);   // Move the stepper motor by a specified depth
+void spool_down_mm(float depth);   // Move the stepper down motor by a specified depth
+void spool_down_mm(float depth);   // Move the stepper up motor by a specified depth
 
 #endif
